@@ -1,6 +1,7 @@
 #include "PID.h"
 
-using namespace std;
+#include <algorithm>
+//using namespace std;
 
 /*
 * TODO: Complete the PID class.
