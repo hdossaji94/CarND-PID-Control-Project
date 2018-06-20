@@ -63,6 +63,6 @@ public:
   */
   double MaxError();
 };
-};
+
 
 #endif /* PID_H */
