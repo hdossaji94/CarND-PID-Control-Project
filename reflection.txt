@@ -1,0 +1,11 @@
+1. Describe the effect each of the P, I, D components had in your implementation.
+	
+	Proportional - This controller is attempting to steer to the center line. There is a lot of fluctuation when used alone. The car will overshoot and go off the road. 
+
+	Integral - When this controller is used alone the car will start going in circles. It is attempting to eliminate a bias in the system, particulary reducing the CTE around curves. 
+
+	Differential - This is used for the overshoot in the Proportional component. It allows a smooth and slower approach to the center. 
+
+2. Describe how the final hyperparameters were chosen.
+
+	Alot of testing and playing with the paramaters were done before I got to one that worked. Starting off with just zeros, the car ran straight. Then adding some value to the proportional controller gave a swinging movement to the car. This car was trying to get the center but kept overshooting. I added a differential paramter so it could slow down and smooth the overshoot. The integral controller seemed to do more damage for me than good so I left it as zero. 
